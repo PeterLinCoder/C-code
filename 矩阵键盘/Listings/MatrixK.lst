@@ -1,0 +1,62 @@
+C51 COMPILER V9.60.7.0   MATRIXK                                                           08/13/2025 13:37:14 PAGE 1   
+
+
+C51 COMPILER V9.60.7.0, COMPILATION OF MODULE MATRIXK
+OBJECT MODULE PLACED IN .\Objects\MatrixK.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE MatrixK.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\M
+                    -atrixK.lst) TABS(2) OBJECT(.\Objects\MatrixK.obj)
+
+line level    source
+
+   1          #include <at89c51RC2.h>
+   2          #include "delay.h"
+   3          
+   4          unsigned int MatrixK()
+   5          {
+   6   1        unsigned int Key=0;
+   7   1        P1=0xff;
+   8   1        P1_3=0;
+   9   1      if(P1_7==0){Delay(20);while(P1_7==0)Delay(20);Key=1;}
+  10   1      if(P1_6==0){Delay(20);while(P1_6==0)Delay(20);Key=5;}
+  11   1      if(P1_5==0){Delay(20);while(P1_5==0)Delay(20);Key=9;}
+  12   1      if(P1_4==0){Delay(20);while(P1_4==0)Delay(20);Key=13;}//第一列
+  13   1      
+  14   1      P1=0xff;
+  15   1        P1_2=0;
+  16   1      if(P1_7==0){Delay(20);while(P1_7==0)Delay(20);Key=2;}
+  17   1      if(P1_6==0){Delay(20);while(P1_6==0)Delay(20);Key=6;}
+  18   1      if(P1_5==0){Delay(20);while(P1_5==0)Delay(20);Key=10;}
+  19   1      if(P1_4==0){Delay(20);while(P1_4==0)Delay(20);Key=14;}//第2列
+  20   1      
+  21   1      P1=0xff;
+  22   1        P1_1=0;
+  23   1      if(P1_7==0){Delay(20);while(P1_7==0)Delay(20);Key=3;}
+  24   1      if(P1_6==0){Delay(20);while(P1_6==0)Delay(20);Key=7;}
+  25   1      if(P1_5==0){Delay(20);while(P1_5==0)Delay(20);Key=11;}
+  26   1      if(P1_4==0){Delay(20);while(P1_4==0)Delay(20);Key=15;}//第3列
+  27   1      
+  28   1      
+  29   1      P1=0xff;
+  30   1        P1_0=0;
+  31   1      if(P1_7==0){Delay(20);while(P1_7==0)Delay(20);Key=4;}
+  32   1      if(P1_6==0){Delay(20);while(P1_6==0)Delay(20);Key=8;}
+  33   1      if(P1_5==0){Delay(20);while(P1_5==0)Delay(20);Key=12;}
+  34   1      if(P1_4==0){Delay(20);while(P1_4==0)Delay(20);Key=16;}//第4列
+  35   1      
+  36   1      
+  37   1      return Key;
+  38   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    401    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       2
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
