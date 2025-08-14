@@ -1,4 +1,4 @@
-
+//矩阵键盘密码
 #include <lcd1602.h>
 #include <at89c51RC2.h>
 #include "MatrixK.h"
@@ -56,4 +56,5 @@ void main()
 	
 	
 	
+
 }
